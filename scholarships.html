@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MeFinance</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style> 
+    p {
+        font-size: 30px;
+    }
+
+    nav{
+      background-color: #DDA0DD;
+      font-size: larger;
+    }
+
+    body {
+      background-color: #D8BFD8;
+      font-family: algeria;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .form-container, .search-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .form-container form, .search-container .input-group {
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .results {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .result-item {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin: 10px;
+      width: 100%;
+      max-width: 600px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .btn-primary {
+      background-color: #cd8acd;
+      border: #ccc;
+    }
+
+    .btn-primary:hover {
+      background-color: #b566b5;
+    }
+
+    .btn-outline-secondary {
+      background-color: #cd8acd;
+      border: #ccc;
+      color: white;
+    }
+
+    .btn-outline-secondary:hover {
+      background-color: #b566b5;
+    }
+
+    .form-control {
+      background-color: #eddded;
+    }
+
+    .divider {
+      border: none;
+      height: 3px;
+      background-color: black;
+      width: 90%;
+      margin: 50px auto;
+      margin-top: 100px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .scholarship {
+      background-color: #eddded;
+      border: 2px solid #a19d9d;
+      padding: 15px;
+      margin: 20px;
+      border-radius: 5px;
+      max-width: 350px;
+      text-align: center;
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .learn{
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px;
+      background-color: #cd8acd;
+      color: white;
+      text-decoration: none; 
+      border-radius: 5px; 
+    }
+
+    .learn:hover{
+      color: black;
+      background-color: #bf75bf; 
+    }
+    .service a:hover {
+      background-color: #bf75bf; 
+    }
+
+    footer {
+      background-color: #e8a6d6;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .result-item{
+      background-color: #eddded;
+    }
+    
+  </style>
+
+</head>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="CAG2 homepage.html">MeFinance</a>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="loans.html">Loans</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="financialliteracy.html">Financial Literacy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tuitionpayments.html">Tuition Payments</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="scholarships.html">Scholarships</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="studentperks.html">Student Perks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="budgetingtools1.html">Budgeting Tools</a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+
+      <h1>Scholarships Tracker</h1>
+
+    <div class="form-container">
+        <form id="scholarship-form" class="d-flex flex-column align-items-center">
+            <div class="mb-3 w-100">
+                <input type="text" id="scholarship-name" class="form-control" placeholder="Scholarship/Grant Name" required>
+            </div>
+            <div class="mb-3 w-100">
+                <input type="text" id="scholarship-details" class="form-control" placeholder="Details" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+    </div>
+
+    <div class="search-container">
+        <div class="input-group mb-3">
+            <input type="text" id="search-input" class="form-control" placeholder="Search scholarships and grants...">
+            <button class="btn btn-outline-secondary" onclick="search()">Search</button>
+        </div>
+    </div>
+    
+    <div class="results" id="results"></div>
+
+    <hr class="divider">
+
+    <!-- <h2> Types of scholarship available</h2> -->
+
+    <div class="container">
+      <h2> Types of scholarship available</h2>
+      <div class="row">
+          <div class="col-sm-4">
+              <div class="scholarship">
+                  <p>RP Freshman Scholarship</p>
+                  <a class='learn' href="rp.html">Learn More</a> 
+              </div>
+          </div>
+          <div class="col-sm-4">
+              <div class="scholarship">
+                  <p>PFP Scholarship</p>
+                  <a class='learn' href="pfp.html">Learn More</a> 
+              </div>
+          </div>
+          <div class="col-sm-4">
+              <div class="scholarship">
+                  <p>Higher Year Scholarships</p>
+                  <a class="learn" href="higher.html">Learn More</a> 
+              </div>
+          </div>
+          <div class="col-sm-6 offset-sm-1">
+              <div class="scholarship">
+                  <p>Edusave Awards</p>
+                  <a class="learn" href="edusave.html">Learn More</a> 
+              </div>
+          </div>
+          <div class="col-sm-4 offset-sm-0">
+              <div class="scholarship">
+                  <p>External Scholarships</p>
+                  <a class="learn" href="external.html">Learn More</a> 
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const scholarshipForm = document.getElementById('scholarship-form');
+            const resultsContainer = document.getElementById('results');
+
+            // Load scholarships from local storage or initialize empty array
+            const scholarships = JSON.parse(localStorage.getItem('scholarships')) || [];
+
+            // Function to display scholarships
+            const displayScholarships = (list) => {
+                resultsContainer.innerHTML = '';
+                list.forEach((scholarship, index) => {
+                    const resultItem = document.createElement('div');
+                    resultItem.classList.add('result-item');
+                    resultItem.innerHTML = `
+                        <h3>${scholarship.name}</h3>
+                        <p>${scholarship.details}</p>
+                        <button class="btn btn-danger" onclick="removeScholarship(${index})">Remove</button>
+                    `;
+                    resultsContainer.appendChild(resultItem);
+                });
+            };
+
+            // Event listener for adding scholarships
+            scholarshipForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = document.getElementById('scholarship-name').value;
+                const details = document.getElementById('scholarship-details').value;
+                scholarships.push({ name, details });
+                localStorage.setItem('scholarships', JSON.stringify(scholarships));
+                displayScholarships(scholarships);
+                scholarshipForm.reset();
+            });
+
+            // Function to remove scholarships
+            window.removeScholarship = (index) => {
+                scholarships.splice(index, 1);
+                localStorage.setItem('scholarships', JSON.stringify(scholarships));
+                displayScholarships(scholarships);
+            };
+
+            // Function to search scholarships
+            window.search = () => {
+                const query = document.getElementById('search-input').value.toLowerCase();
+                const filteredScholarships = scholarships.filter(scholarship =>
+                    scholarship.name.toLowerCase().includes(query) ||
+                    scholarship.details.toLowerCase().includes(query)
+                );
+                displayScholarships(filteredScholarships);
+            };
+
+            // Initial display of scholarships
+            displayScholarships(scholarships);
+        });
+    </script>
+    <br>
+</body>
+
+<footer>
+  <p>SHERNICE</p>
+</footer>
+</html>

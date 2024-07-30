@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MeFinance</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<style> 
+  p {
+      font-size: 30px;
+  }
+
+  nav{
+    background-color: #DDA0DD;
+    font-size: larger;
+  }
+
+  body {
+    background-color: #D8BFD8;
+    font-family: algeria;
+  }
+
+  .padding {
+    padding: 20px;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* h1 {
+    color: black;
+    margin: 0;
+    padding: 10px;
+  } */
+  h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+  h2 {
+    color:  #864b86;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .account-details {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 1px;
+    background-color: #eddded;
+    color: white;
+    padding: 10px 5%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .apply-loan {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #eddded;
+    color: white;
+    padding: 10px 5%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .view-package {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #eddded;
+    color: white;
+    padding: 10px 5%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black
+  }
+
+  .loan-history {
+    background-color: #eddded;
+    color: white;
+    padding: 10px 5%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .album {
+    text-align: center;
+    width: 30%;
+  }
+
+  .album_description {
+    width: 70%;
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  img {
+    width: 65%;
+    border-radius: 5%;
+  }
+
+  footer {
+    background-color: #e8a6d6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+
+  }
+  
+</style>
+</head>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="CAG2 homepage.html">MeFinance</a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="loans.html">Loans</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="financialliteracy.html">Financial Literacy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tuitionpayments.html">Tuition Payments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="scholarships.html">Scholarships</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="studentperks.html">Student Perks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="budgetingtools1.html">Budgeting Tools</a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+      <div class = 'padding'>
+        <header>
+        <div class="container-fluid p-5 text-black text-center">
+          <h1>Loan Application</h1>
+        </div>
+        </header>
+        <main>
+      <div class="container">
+        <div class="row">
+         <div class="col-sm-6 ">
+          <section class="view-package">
+            <h2>View Package</h2>
+            <ul>
+              <li><a href="fix.html">Fixed Loan</li>
+              <li><a href="flexible.html">Flexible Loan</a></li>
+            </ul>
+          </section>
+         </div>
+          <div class="col-sm-6">
+            <section class="apply-loan">
+              <h2>Select Account to be Used</h2>
+              <ul>
+                <li><a href="current.html">Current Account</li>
+                <li><a href="savings.html">Savings Account</li>
+              </ul>
+            </section>
+          </div>
+          <div class="col-sm-6">
+            <section class="account-details">
+              <h2>Loan Returns</h2>
+              <a href="loan_returns.html" class="plan-button">Payments</a>
+            </section>
+          </div>
+          <div class="col-sm-6">
+            <section class="loan-history">
+              <h2>Loan History</h2>
+              <ul>
+                <li><a href="amount_applied.html">Amounts Applied</a></li>
+                <li><a href="amount_paid.html">Amounts Paid</a></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+        </main>
+      
+      <script src="script.js"></script>
+      </div>
+      
+      
+      
+      </body>
+<footer>
+  <p>SHAQIL</p>
+</footer>
+
+</html>

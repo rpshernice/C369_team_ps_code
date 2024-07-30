@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MeFinance</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style> 
+    p {
+        font-size: 30px;
+    }
+
+    nav{
+      background-color: #DDA0DD;
+      font-size: larger;
+    }
+
+    body {
+      background-color: #D8BFD8;
+      font-family: algeria;
+
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 1rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .budgeting-tools {
+      padding: 2rem;
+      border-radius: 8px;
+      font-size: 30px;
+    }
+
+    form div {
+      margin-bottom: 1rem;
+    }
+
+    button {
+      background-color: #e8a6d6;
+      border: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #d88fb9;
+    }
+
+    .back{
+        text-decoration: None;
+        font-size: 30px;
+        color: black;
+        margin: 20px;
+    }
+
+    .learn{
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px;
+      background-color: #cd8acd;
+      color: white;
+      text-decoration: none; 
+      border-radius: 5px; 
+      margin-left: 1050px;
+    }
+
+    .add {
+      display: inline-block;
+      margin-left: 500px;
+      padding: 10px;
+      background-color: #cd8acd;
+      color: white;
+      text-decoration: none; 
+      border-radius: 5px; 
+    }
+
+    footer {
+      background-color: #e8a6d6;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="CAG2 homepage.html">MeFinance</a>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="loans.html">Loans</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="financialliteracy.html">Financial Literacy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tuitionpayments.html">Tuition Payments</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="scholarships.html">Scholarships</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="studentperks.html">Student Perks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="budgetingtools1.html">Budgeting Tool</a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+
+      <div class="container-fluid p-5 text-black text-center">
+        <h1>Budgeting Tools</h1>
+      </div>
+
+    <main>
+        <section class="budgeting-tools">
+            <form id="budget-form">
+                <div>
+                    <label>Income:</label>
+                    <input type="number" id="income" placeholder="$600">
+                </div>
+                <br>
+                <div>
+                    <label>Limit:</label>
+                    <input type="number" id="limit" placeholder="$450">
+                </div>
+                <br>
+                <div>
+                  <label>Type of Expense:</label>
+                  <input type="text" id="expensetype" placeholder="Enter type of expense">
+                </div>
+                <br>
+                <div>
+                    <label>Expense:</label>
+                    <input type="number" id="expense" placeholder="Enter your expense">
+                </div>
+                
+            </form>
+            <a class="add" onclick="Add()">Add</a>
+            
+            <br>
+            <div id="budget-summary">
+                <a class="learn" href="budgetingtools2.html" >View Budget Summary</a>
+            </div>
+        </section>
+    </main>
+
+    <a class="back" href="budgetingtools1.html">< Back</a>
+    <br><br>
+
+    <script>
+      function Add() {
+          document.getElementById("add").innerHTML = alert('Expenses recorded');
+      }
+  </script>
+
+  
+</body>
+
+<footer>
+  <p>BERNICE</p>
+</footer>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MeFinance</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style> 
+    p {
+        font-size: 30px;
+    }
+
+    nav{
+      background-color: #DDA0DD;
+      font-size: larger;
+    }
+
+    body {
+      background-color: #D8BFD8;
+      font-family: algeria;
+    }
+
+    h1 {
+      color: white;
+      text-align: center;
+      font-size: 70px;
+    }
+
+    a {
+      font-size: 40px;
+      text-align: end;
+    }
+
+    .container {
+      font-size: 50px;
+    }
+    .centered{
+      position:absolute;
+      top: 71%;
+      left:50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 50px;
+    }
+    
+    .text{
+      width: 70px;
+      margin-left: 10%;
+    }
+
+    .flexbox {
+        display: flex;
+    }
+    .music {
+        display: flex;
+    }
+    .album {
+        text-align: center;
+        width: 60%;
+    }
+    .album_description {
+        width: 40%;
+        margin-left: 30px;
+    }
+    
+    .carousel-inner {
+      border-radius: 10%;
+    }
+
+    article {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    
+  </style>
+</head>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="CAG2 homepage.html">MeFinance</a>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="loans.html">Loans</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="financialliteracy.html">Financial Literacy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tuitionpayments.html">Tuition Payments</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="scholarships.html">Scholarships</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="studentperks.html">Student Perks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="budgetingtools1.html">Budgeting Tools</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+
+  <br>
+
+  <div class = 'container-c'>
+    <img src = 'images/pic7.jpg' width = '100%'/>
+    <div class="centered">Student Financial Management</div>
+  </div>
+  <br>
+  <br>
+  <!-- Carousel -->
+   
+
+  <article>
+    <div class = 'music'>
+        <div class = 'album'>
+          <div class="container">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- following div tag can be removed if not needed-->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/pic2.jpg" class="d-block w-100" height="585">
+              </div>
+              <div class="carousel-item">
+                <img src="images/pic6.jpg" class="d-block w-100" height="585">
+              </div>
+              <div class="carousel-item">
+                <img src="images/pic4.jpg" class="d-block w-100" height="585">
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class = 'album_description'>
+            <br>
+            <br>
+            <p>
+              MeFinance was founded by a group of Republic students who experienced the challenges of managing finances while pursuing higher education. Inspired by their own struggles, they set out to create a platform that addresses the unique financial needs of students.
+            </p>
+            <p>Find out more about us <a href ="aboutus.html">here</a>!</p>
+        </div>
+    </div>      
+</article>
+<br><br>
+  
+</body>
+</html>
